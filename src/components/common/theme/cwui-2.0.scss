@@ -1,0 +1,9 @@
+@import 'variable.2.0.scss';
+@import 'cwui2.0/button/index.scss';
+@import 'cwui2.0/treeselect/index.scss';
+@import 'cwui2.0/treeselect/index.scss';
+
+.icon [class^='icon-'],
+[class*=' icon-'] {
+  font-size: 16px;
+}

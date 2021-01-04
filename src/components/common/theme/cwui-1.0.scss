@@ -1,0 +1,9 @@
+@import 'variable.1.0.scss';
+@import 'cwui1.0/button/index.scss';
+@import 'cwui1.0/inputele/index.scss';
+@import 'cwui1.0/treeselect/index.scss';
+
+.icon [class^='icon-'],
+[class*=' icon-'] {
+  font-size: 16px;
+}

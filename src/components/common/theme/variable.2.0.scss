@@ -1,0 +1,77 @@
+/********** 全局 开始 **********/
+$uf-border-radius: 4px;
+/********** 全局 结束 **********/
+
+/********** 按钮 开始 **********/
+$btn-font-size: 14px;
+$btn-link-height: 14px;
+$btn-height: 32px;
+$btn-line-height: 28px;
+$btn-default-bg-color: #fff;
+$btn-default-color: #0066ff;
+$btn-primary-bg-color: #0066ff;
+$btn-primary-color: #fff;
+$btn-normal-bg-color: #fff;
+$btn-normal-color: #888888;
+$btn-primary-hover-bg-color: #3384ff;
+$btn-primary-hover-color: #fff;
+$btn-active-color: #0051CC;
+$btn-inner-line-height: 14px;
+$btn-large-height: 40px;
+$btn-small-height: 24px;
+/********** 按钮 结束 **********/
+
+/********** 表单元素 开始 **********/
+//默认宽度
+$form-el-width: 220px;
+//默认高度
+$form-el-height: 32px;
+//小型
+$form-el-size-small-height: 24px;
+//大型
+$form-el-size-large-height: 40px;
+//字体大小
+$form-el-font-size: 14px;
+//字体颜色
+$form-el-color: #333;
+//内容placeholder字体颜色
+$form-el-placeholder-color: #C0C4CC;
+//圆角
+$form-el-border-radius: 4px;
+//边框颜色
+$form-el-border-color: #d9d9d9;
+//背景颜色
+$form-el-bg-color: #ffffff;
+//禁用字体颜色
+$form-el-disabled-color: #999999;
+//禁用背景颜色
+$form-el-disabled-bg-color: #eeeeee;
+//禁用鼠标样式
+$form-el-disabled-cursor: not-allowed;
+//边框hover颜色
+$form-el-border-hover-color: #0066ff;
+//hover阴影颜色
+$form-el-border-hover-shadow-color: #cce0ff;
+//边框阴影颜色
+$form-el-border-shadow-color: #cce0ff;
+//图标大小
+$form-el-icon-font-size: 16px;
+//图标颜色
+$form-el-icon-color: #888888;
+/********** 表单元素 结束 **********/
+
+
+/********** 下拉容器 开始 **********/
+//默认最大高度
+$select-options-wrap-max-height: 200px;
+//阴影颜色
+$select-options-wrap-shadow-color: rgba(0, 0, 0, 0.15);
+//背景颜色
+$select-options-wrap-bg-color: #ffffff;
+//圆角
+$select-options-wrap-border-radius: 4px;
+//搜索定位高亮的颜色
+$select-options-search-bg-color: #e6f4fd;
+/********** 下拉容器 结束 **********/
+
+

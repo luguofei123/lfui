@@ -1,0 +1,334 @@
+/* 按钮类别 开始 */
+.uf-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  line-height: $btn-link-height;
+}
+.uf-btn-default,
+.uf-btn-primary,
+.uf-btn-normal,
+.uf-btn-combox {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 16px;
+  height: $btn-height;
+  border-radius: $uf-border-radius;
+  font-size: $btn-font-size;
+  line-height: $btn-line-height;
+}
+.uf-btn-primary {
+  background: $btn-primary-bg-color;
+  color: $btn-primary-color;
+  border: 1px solid $btn-primary-bg-color;
+}
+.uf-btn-default {
+  background: $btn-default-bg-color;
+  color: $btn-default-color;
+  border: 1px solid $btn-default-border-color;
+}
+.uf-btn-normal {
+  background: $btn-normal-bg-color;
+  color: $btn-normal-color;
+  border: 1px solid $btn-normal-border-color;
+}
+.uf-btn-combox {
+  padding: 0 8px;
+  background: $btn-normal-bg-color;
+  color: $btn-normal-color;
+  border: 1px solid $btn-normal-border-color;
+}
+.uf-btn-link,
+.uf-btn-iconlink,
+.uf-btn-more {
+  font-size: 14px;
+  color: $btn-primary-color;
+}
+.uf-btn-primary span,
+.uf-btn-primary i {
+  color: $btn-primary-color;
+}
+.uf-btn-normal span,
+.uf-btn-combox span,
+.uf-btn-default span,
+.uf-btn-normal i,
+.uf-btn-combox i,
+.uf-btn-default i {
+  color: $btn-normal-color;
+}
+.uf-btn-link span,
+.uf-btn-iconlink span,
+.uf-btn-comboxlink span,
+.uf-btn-more span,
+.uf-btn-link i,
+.uf-btn-iconlink i,
+.uf-btn-comboxlink i,
+.uf-btn-more i {
+  color: $btn-primary-bg-color;
+}
+/* 按钮类别 结束 */
+
+/* 带图标的按钮 开始 */
+.uf-btn-default.uf-btn-icon,
+.uf-btn-primary.uf-btn-icon,
+.uf-btn-normal.uf-btn-icon,
+.uf-btn-combox.uf-btn-icon,
+.uf-btn-link.uf-btn-icon,
+.uf-btn-iconlink.uf-btn-icon {
+  padding: 0 8px;
+}
+/* 带图标的按钮 结束 */
+
+/* 按钮hover 开始 */
+.uf-btn-primary:hover {
+  background: $btn-primary-hover-bg-color;
+  color: $btn-primary-hover-color;
+  border: 1px solid $btn-primary-hover-bg-color;
+}
+.uf-btn-default:hover,
+.uf-btn-normal:hover {
+  background: $btn-primary-bg-color;
+  color: $btn-primary-color;
+  border: 1px solid $btn-primary-bg-color;
+}
+.uf-btn-link:hover {
+  color: $btn-primary-hover-bg-color;
+}
+.uf-btn-combox:hover {
+  color: $btn-primary-hover-bg-color;
+  border: 1px solid $btn-primary-hover-bg-color;
+}
+.uf-btn-primary.uf-btn-icon:hover {
+  background: $btn-primary-hover-bg-color;
+}
+.uf-btn-default.uf-btn-icon:hover,
+.uf-btn-normal.uf-btn-icon:hover {
+  color: $btn-primary-color;
+}
+.uf-btn-combox.uf-btn-icon:hover,
+.uf-btn-link.uf-btn-icon:hover,
+.uf-btn-iconlink.uf-btn-icon:hover {
+  color: $btn-primary-hover-bg-color;
+}
+.uf-btn-default:hover span,
+.uf-btn-default:hover i,
+.uf-btn-normal:hover span,
+.uf-btn-normal:hover i {
+  color: $btn-primary-color;
+}
+.uf-btn-link:hover span,
+.uf-btn-combox:hover span,
+.uf-btn-iconlink:hover span,
+.uf-btn-comboxlink:hover span,
+.uf-btn-more:hover span,
+.uf-btn-link:hover i,
+.uf-btn-combox:hover i,
+.uf-btn-iconlink:hover i,
+.uf-btn-comboxlink:hover i,
+.uf-btn-more:hover i {
+  color: $btn-primary-hover-bg-color;
+}
+/* 按钮hover 结束 */
+
+
+/* 按钮active 开始 */
+.uf-btn-primary:active {
+  background: $btn-active-color;
+  border: 1px solid $btn-active-color;
+}
+.uf-btn-default:active {
+  color: $btn-active-color;
+  border: 1px solid $btn-active-color;
+}
+.uf-btn-normal:active {
+  color: $btn-active-color;
+}
+.uf-btn-link:active {
+  color: $btn-active-color;
+}
+.uf-btn-combox:active {
+  color: $btn-active-color;
+  border: 1px solid $btn-active-color;
+}
+.uf-btn-primary.uf-btn-icon:active {
+  background: $btn-active-color;
+}
+.uf-btn-default.uf-btn-icon:active,
+.uf-btn-normal.uf-btn-icon:active {
+  color: $btn-primary-color;
+}
+.uf-btn-combox.uf-btn-icon:active,
+.uf-btn-link.uf-btn-icon:active,
+.uf-btn-iconlink.uf-btn-icon:active {
+  color: $btn-active-color;
+}
+.uf-btn-default:active span,
+.uf-btn-default:active i,
+.uf-btn-normal:active span,
+.uf-btn-normal:active i {
+  color: $btn-primary-color;
+}
+.uf-btn-link:active span,
+.uf-btn-combox:active span,
+.uf-btn-iconlink:active span,
+.uf-btn-comboxlink:active span,
+.uf-btn-more:active span,
+.uf-btn-link:active i,
+.uf-btn-combox:active i,
+.uf-btn-iconlink:active i,
+.uf-btn-comboxlink:active i,
+.uf-btn-more:active i {
+  color: $btn-active-color;
+}
+/* 按钮active 结束 */
+
+
+/* 按钮内部 开始 */
+.uf-btn-inner {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: $btn-inner-line-height;
+}
+.uf-btn-inner .text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: $btn-inner-line-height;
+}
+/* 按钮内部 结束 */
+
+/* 大型按钮适配 开始 */
+.uf-btn-default.large,
+.uf-btn-primary.large,
+.uf-btn-normal.large,
+.uf-btn-combox.large {
+  padding: 0 24px;
+  height: $btn-large-height;
+  line-height: 34px;
+  font-size: 16px;
+}
+.uf-btn-link.large,
+.uf-btn-iconlink.large,
+.uf-btn-comboxlink.large,
+.uf-btn-more.large {
+  font-size: 16px;
+}
+.uf-btn-default.large.uf-btn-icon,
+.uf-btn-primary.large.uf-btn-icon,
+.uf-btn-normal.large.uf-btn-icon,
+.uf-btn-combox.large,
+.uf-btn-combox.large.uf-btn-icon {
+  padding: 0 12px;
+}
+.uf-btn-default.large .uf-btn-inner,
+.uf-btn-primary.large .uf-btn-inner,
+.uf-btn-normal.large .uf-btn-inner,
+.uf-btn-combox.large .uf-btn-inner {
+  line-height: 16px;
+}
+.uf-btn-link.large .uf-btn-inner,
+.uf-btn-iconlink.large .uf-btn-inner,
+.uf-btn-link.large .uf-btn-inner .text,
+.uf-btn-iconlink.large .uf-btn-inner .text {
+  line-height: 16px;
+}
+.btn.uf-btn-link.large,
+.btn.uf-btn-iconlink.large {
+  line-height: 16px;
+}
+/* 大型按钮适配 结束 */
+
+/* 小型按钮适配 开始 */
+.uf-btn-default.small,
+.uf-btn-primary.small,
+.uf-btn-normal.small,
+.uf-btn-combox.small {
+  padding: 0 8px;
+  height: $btn-small-height;
+  line-height: 18px;
+  font-size: 12px;
+}
+.uf-btn-link.small,
+.uf-btn-iconlink.small,
+.uf-btn-comboxlink.small,
+.uf-btn-more.small {
+  font-size: 12px;
+}
+.uf-btn-default.small .uf-btn-inner,
+.uf-btn-primary.small .uf-btn-inner,
+.uf-btn-normal.small .uf-btn-inner,
+.uf-btn-combox.small .uf-btn-inner {
+  line-height: 22px;
+}
+.btn.uf-btn-link.small,
+.btn.uf-btn-iconlink.small {
+  line-height: 12px;
+}
+.uf-btn-link.small .uf-btn-inner,
+.uf-btn-iconlink.small .uf-btn-inner,
+.uf-btn-link.small .uf-btn-inner .text,
+.uf-btn-iconlink.small .uf-btn-inner .text {
+  line-height: 12px;
+}
+/* 小型按钮适配 结束 */
+
+/* 按钮禁用 开始 */
+.disabled.uf-btn-primary,
+.disabled.uf-btn-default,
+.disabled.uf-btn-normal,
+.disabled.uf-btn-combox {
+  background: #eeeeee;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  cursor: not-allowed;
+}
+.disabled.uf-btn-comboxlink,
+.disabled.uf-btn-more,
+.disabled.uf-btn-radio,
+.disabled.uf-btn-link,
+.disabled.uf-btn-iconlink {
+  cursor: not-allowed;
+}
+.disabled span,
+.disabled i {
+  color: #aaaaaa;
+}
+.disabled.uf-btn-primary:hover,
+.disabled.uf-btn-default:hover,
+.disabled.uf-btn-normal:hover,
+.disabled.uf-btn-combox:hover,
+.disabled.uf-btn-primary.uf-btn-icon:hover,
+.disabled.uf-btn-default.uf-btn-icon:hover,
+.disabled.uf-btn-normal.uf-btn-icon:hover,
+.disabled.uf-btn-combox.uf-btn-icon:hover {
+  background: #eeeeee;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  cursor: not-allowed;
+}
+.disabled:hover span,
+.disabled:hover i {
+  color: #aaaaaa;
+}
+/* 按钮禁用 结束*/
+
+/* 下拉按钮 开始 */
+.ufOptionsPanel {
+  position: absolute;
+  left: 0;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 2;
+  max-height: 200px;
+  transition: height 0.3s ease, opacity 0.3s ease, border 0.28s ease;
+  color: #888888;
+  border: 0;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  opacity: 0;
+}
+/* 下拉按钮 结束 */
+//group需要在最后引入
+@import './buttonGroup.scss';

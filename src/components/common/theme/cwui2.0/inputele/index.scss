@@ -1,0 +1,157 @@
+.uf-input-el-wrap {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  width: $form-el-width;
+  height: $form-el-height;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: $form-el-border-radius;
+  border: 1px solid $form-el-border-color;
+  padding: 5px;
+  cursor: pointer;
+}
+.uf-input-el-wrap input,
+.uf-input-el-wrap .showChecked,
+.uf-input-el-wrap .placeholder {
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.uf-input-el-wrap input::-webkit-input-placeholder,
+.uf-input-el-wrap input::-moz-placeholder,
+.uf-input-el-wrap input::placeholder {
+  color: $form-el-placeholder-color;
+}
+.placeholder {
+  color: $form-el-placeholder-color;
+}
+.uf-input-el-wrap:hover {
+  border: 1px solid $form-el-border-hover-color;
+}
+.uf-input-el-wrap.active {
+  border: 1px solid $form-el-border-hover-color;
+  box-shadow: 0 0 4px 0 $form-el-border-hover-shadow-color;
+}
+.uf-input-el-before-icons-wrap {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 20px;
+}
+.uf-input-el-after-icons-wrap {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  width: 0;
+  height: 20px;
+  align-items: center;
+}
+.uf-input-el-after-icon-slot-wrap{
+  width: 0;
+  height: 20px;
+}
+.clear-wrap{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-wrap {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+.clear {
+  cursor: pointer;
+  color: $form-el-icon-color;
+}
+.uf-input-el-wrap.hasBeforeIconSlot{
+  padding-left: 30px;
+}
+.uf-input-el-wrap.allowClear,
+.uf-input-el-wrap.hasAfterIconSlot {
+  padding-right: 25px;
+}
+.uf-input-el-wrap.allowClear.hasAfterIconSlot{
+  padding-right: 45px;
+}
+.uf-input-el-wrap.allowClear .uf-input-el-after-icons-wrap,
+.uf-input-el-wrap.hasAfterIconSlot .uf-input-el-after-icon-slot-wrap,
+.uf-input-el-wrap.hasAfterIconSlot .uf-input-el-after-icons-wrap {
+  width: 20px;
+}
+.uf-input-el-wrap.allowClear.hasAfterIconSlot .uf-input-el-after-icons-wrap {
+  width: 40px;
+}
+.uf-select-arrow {
+  color: $form-el-icon-color;
+  transition: transform 0.3s ease;
+}
+.uf-transTop {
+  transform: rotate(-180deg);
+}
+.uf-input-el-wrap.noborder,
+.uf-input-el-wrap.disabled.noborder {
+  border: none !important;
+  box-shadow: none !important;
+}
+.uf-input-el-wrap.small,
+.uf-input-el-wrap.disabled.small {
+  height: $form-el-size-small-height;
+  padding: 1px 5px;
+}
+.uf-input-el-wrap.large,
+.uf-input-el-wrap.disabled.large {
+  height: $form-el-size-large-height;
+}
+.uf-input-el-wrap.small .ufTreeOptionsWrap,
+.uf-input-el-wrap.small .ufSelectOptionsWrap,
+.uf-input-el-wrap.disabled.small .ufTreeOptionsWrap,
+.uf-input-el-wrap.disabled.small .ufSelectOptionsWrap {
+  top: $form-el-size-small-height;
+}
+.uf-input-el-wrap.large .ufTreeOptionsWrap,
+.uf-input-el-wrap.large .ufSelectOptionsWrap,
+.uf-input-el-wrap.disabled.large .ufTreeOptionsWrap,
+.uf-input-el-wrap.disabled.large .ufSelectOptionsWrap {
+  top: $form-el-size-large-height;
+}
+.uf-input-el-wrap.disabled {
+  cursor: not-allowed !important;
+  border: 1px solid $form-el-border-color !important;
+  background: $form-el-disabled-bg-color !important;
+  color: $form-el-disabled-color !important;
+}
+.uf-input-el-wrap.disabled input::-webkit-input-placeholder,
+.uf-input-el-wrap.disabled input::-moz-placeholder,
+.uf-input-el-wrap.disabled input::placeholder {
+  color: $form-el-disabled-color !important;
+}
+.uf-input-el-wrap.disabled input {
+  background: $form-el-disabled-bg-color !important;
+}
+.uf-input-el-wrap.disabled input,
+.uf-input-el-wrap.disabled .showChecked,
+.uf-input-el-wrap.disabled .placeholder {
+  cursor: $form-el-disabled-cursor !important;
+}
+.uf-input-el-wrap.disabled .clear{
+  cursor: not-allowed !important;
+}
+.uf-input-el-wrap.disabled .uf-input-el-before-icons-wrap .icon [class^='icon-'],
+.uf-input-el-wrap.disabled .uf-input-el-before-icons-wrap .icon [class*=' icon-'],
+.uf-input-el-wrap.disabled .uf-input-el-after-icon-slot-wrap .icon [class^='icon-'],
+.uf-input-el-wrap.disabled .uf-input-el-after-icon-slot-wrap .icon [class*=' icon-']{
+  color: $form-el-disabled-color !important;
+}

@@ -1,0 +1,35 @@
+
+.searchBg {
+  background-color: $select-options-search-bg-color;
+}
+
+.ufTreeOptionsWrap,.ufSelectOptionsWrap {
+  position: absolute;
+  top: $form-el-height;
+  left: 0;
+  width: 100%;
+  max-height: $select-options-wrap-max-height;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  overflow: auto;
+  border-radius: $select-options-wrap-border-radius;
+  background: $select-options-wrap-bg-color;
+  z-index: 9;
+  // box-shadow: 0 1px 4px 0 $select-options-wrap-shadow-color;
+  box-shadow: 0 2px 8px $select-options-wrap-shadow-color;
+}
+.ufSelectOptionsWrap {
+  padding: 5px 0;
+}
+.ufSelectPanelItem {
+  box-sizing: border-box;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #333;
+}
+.ufSelectPanelItem:hover {
+  background-color: $select-options-search-bg-color;
+}
+.selectItemHighlight {
+  background-color: $select-options-search-bg-color;
+}
