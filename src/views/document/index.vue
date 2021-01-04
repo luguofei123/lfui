@@ -1,6 +1,7 @@
 <template>
   <div class="mainBox">
-   2222
+      <div class="indexItem" @click="ind = 2" :class="ind === 2 ?'active':''"><router-link to="/document/buttonExp">Button 按钮</router-link></div>
+  <router-view />
   </div>
 </template>
 <script>

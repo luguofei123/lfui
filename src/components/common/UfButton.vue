@@ -7,7 +7,7 @@
  * @FilePath: 
 -->
 <template>
-  <a :class="['uf-btn', getTypeStr(type), icon ? 'uf-btn-icon' : '', size, disabled ? 'disabled' : '']" v-clickout="handleClose" ref="btn" href="javascript:;" @click="onClick">
+  <a :class="['uf-btn', getTypeStr(type), icon ? 'uf-btn-icon' : '', size, disabled ? 'disabled' : '']"  ref="btn" href="javascript:;" @click="onClick">
     <div class="uf-btn-inner">
       <i v-if="showIcon && icon" :class="['icon ' + icon, hasContent ? 'mr-5' : '']"></i>
       <span ref="content" class="text">
