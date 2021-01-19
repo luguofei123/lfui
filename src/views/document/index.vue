@@ -1,7 +1,25 @@
 <template>
-  <div class="mainBox">
-      <div class="indexItem" @click="ind = 2" :class="ind === 2 ?'active':''"><router-link to="/document/buttonExp">Button 按钮</router-link></div>
-  <router-view />
+  <div>
+    <div class="header">
+      <div class="headerLeft">
+        <a href="#">
+          <img src="../../assets/logo.png" alt="">
+        </a>
+      </div>
+      <div class="headerRight">
+        <ul>
+          <li><a href="">测试1</a></li>
+          <li><a href="">测试2</a></li>
+          <li><a href="">测试3</a></li>
+          <li><a href="">测试4</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="leftMenu"></div>
+      <div class="rightContent"></div>
+    </div>
+    <div class="footer"></div>
   </div>
 </template>
 <script>
@@ -24,7 +42,18 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
+.header{
+  display: flex;
+  .headerLeft{
+    a>img{
+      width: 50px;
+    }
+  }
+  .headerRight{
+    flex: 1;
+  }
+}
 .mainBox {
   position: absolute;
   left: 0;
