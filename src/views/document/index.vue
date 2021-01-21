@@ -16,8 +16,14 @@
       </div>
     </div>
     <div class="container">
-      <div class="leftMenu"></div>
-      <div class="rightContent"></div>
+      <div class="leftMenu">
+        <ul>
+          <li><router-link to="/document/buttonExp">按钮</router-link></li>
+        </ul>
+      </div>
+      <div class="rightContent">
+        <router-view/>
+      </div>
     </div>
     <div class="footer"></div>
   </div>
@@ -46,6 +52,7 @@ export default {
 .header{
   display: flex;
   justify-content:space-between;
+  padding:0 10px;
   height: 50px;
   .headerLeft{
     a>img{
@@ -56,6 +63,16 @@ export default {
     ul>li{
       float:left;
     }
+  }
+}
+.container{
+  display: flex;
+  height: 500px;
+  .leftMenu{
+    width: 200px;
+  }
+  .rightContent{
+    flex: 1;
   }
 }
 </style>
