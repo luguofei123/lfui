@@ -19,6 +19,7 @@
       <div class="leftMenu">
         <ul>
           <li><router-link to="/document/buttonExp">按钮</router-link></li>
+          <li><router-link to="/document/buttonExp1">按钮1</router-link></li>
         </ul>
       </div>
       <div class="rightContent">
