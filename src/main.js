@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import './assets/yonyou3.0/iconfont.css'
 //自定义公共组件
 import globalComponents from './components/common/globalComponents.js' //全局基础组件
 Vue.use(globalComponents)

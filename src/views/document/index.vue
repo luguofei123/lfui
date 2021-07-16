@@ -3,7 +3,7 @@
     <div class="header">
       <div class="headerLeft">
         <a href="#">
-          <img src="../../assets/logo.png" alt="">
+          <img src="../../assets/logo.png" alt="" />
         </a>
       </div>
       <div class="headerRight">
@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="rightContent">
-        <router-view/>
+        <router-view />
       </div>
     </div>
     <div class="footer"></div>
@@ -31,7 +31,7 @@
 </template>
 <script>
 // import Vue from 'vue'
-// 文档源码高亮部分
+// 文档源码高亮部分hao
 // import hljs from "highlight.js";
 // import 'highlight.js/styles/vs2015.css'
 // import hljscore from "highlight.js/lib/core";
@@ -39,40 +39,40 @@
 // Vue.use(hljscore.vuePlugin);
 
 export default {
-  data () {
+  data() {
     return {
       ind: 1
     }
   },
-  mounted () {
+  mounted() {
     // console.log(window.innerHeight)
   }
 }
 </script>
 <style lang="scss">
-.header{
+.header {
   display: flex;
-  justify-content:space-between;
-  padding:0 10px;
+  justify-content: space-between;
+  padding: 0 10px;
   height: 50px;
-  .headerLeft{
-    a>img{
+  .headerLeft {
+    a > img {
       width: 50px;
     }
   }
-  .headerRight{
-    ul>li{
-      float:left;
+  .headerRight {
+    ul > li {
+      float: left;
     }
   }
 }
-.container{
+.container {
   display: flex;
   height: 500px;
-  .leftMenu{
+  .leftMenu {
     width: 200px;
   }
-  .rightContent{
+  .rightContent {
     flex: 1;
   }
 }
