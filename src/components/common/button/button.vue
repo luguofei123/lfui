@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :disabled="disabled" :class="['lf-botton', 'lf-botton--' + size, 'lf-botton--' + type, disabled ? 'is-disabled' : '']" @click="onClick">
+  <button type="button" :disabled="disabled" :class="['lf-button', 'lf-button--' + size, 'lf-button--' + type, disabled ? 'is-disabled' : '']" @click="onClick">
     <i class="iconloading" v-if="loading"></i>
     <i :class="['iconfont', icon]" v-if="icon && !loading"></i>
     <span class="text" v-if="$slots.default"><slot></slot></span>

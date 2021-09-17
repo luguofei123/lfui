@@ -10,6 +10,15 @@
     &nbsp;&nbsp;
     <lf-button type="primary" size="large" @click="test" disabled>primary</lf-button>
     <span class="iconfont iconyujing3"></span>
+    <br />
+    <lf-button-group>
+      <lf-button type="primary" size="small" @click="test">primary</lf-button>
+      <lf-button type="primary" size="small" @click="test">primary</lf-button>
+      <lf-button type="primary" size="small" @click="test">primary</lf-button>
+      <lf-button type="primary" size="small" @click="test">primary</lf-button>
+      <lf-button type="primary" size="small" @click="test">primary</lf-button>
+      <lf-button type="primary" size="small" @click="test">primary</lf-button>
+    </lf-button-group>
   </div>
 </template>
 <script>

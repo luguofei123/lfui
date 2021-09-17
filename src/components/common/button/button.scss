@@ -1,12 +1,12 @@
-.lf-botton-group > .lf-botton.is-active,
-.lf-botton-group > .lf-botton.is-disabled,
-.lf-botton-group > .lf-botton:active,
-.lf-botton-group > .lf-botton:focus,
-.lf-botton-group > .lf-botton:hover {
+.lf-button-group > .lf-button.is-active,
+.lf-button-group > .lf-button.is-disabled,
+.lf-button-group > .lf-button:active,
+.lf-button-group > .lf-button:focus,
+.lf-button-group > .lf-button:hover {
   z-index: 1;
 }
 
-.lf-botton {
+.lf-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -31,52 +31,52 @@
   border-radius: 4px;
 }
 
-.lf-botton + .lf-botton {
+.lf-button + .lf-button {
   margin-left: 10px;
 }
 
-.lf-botton:focus,
-.lf-botton:hover {
+.lf-button:focus,
+.lf-button:hover {
   color: #409eff;
   border-color: #c6e2ff;
   background-color: #ecf5ff;
 }
 
-.lf-botton:active {
+.lf-button:active {
   color: #3a8ee6;
   border-color: #3a8ee6;
   outline: 0;
 }
 
-.lf-botton::-moz-focus-inner {
+.lf-button::-moz-focus-inner {
   border: 0;
 }
 
-.lf-botton [class*='el-icon-'] + span {
+.lf-button [class*='el-icon-'] + span {
   margin-left: 5px;
 }
 
-.lf-botton.is-plain:focus,
-.lf-botton.is-plain:hover {
+.lf-button.is-plain:focus,
+.lf-button.is-plain:hover {
   background: #fff;
   border-color: #409eff;
   color: #409eff;
 }
 
-.lf-botton.is-active,
-.lf-botton.is-plain:active {
+.lf-button.is-active,
+.lf-button.is-plain:active {
   color: #3a8ee6;
   border-color: #3a8ee6;
 }
 
-.lf-botton.is-plain:active {
+.lf-button.is-plain:active {
   background: #fff;
   outline: 0;
 }
 
-.lf-botton.is-disabled,
-.lf-botton.is-disabled:focus,
-.lf-botton.is-disabled:hover {
+.lf-button.is-disabled,
+.lf-button.is-disabled:focus,
+.lf-button.is-disabled:hover {
   color: #c0c4cc;
   cursor: not-allowed;
   background-image: none;
@@ -84,24 +84,24 @@
   border-color: #ebeef5;
 }
 
-.lf-botton.is-disabled.lf-botton--text {
+.lf-button.is-disabled.lf-button--text {
   background-color: transparent;
 }
 
-.lf-botton.is-disabled.is-plain,
-.lf-botton.is-disabled.is-plain:focus,
-.lf-botton.is-disabled.is-plain:hover {
+.lf-button.is-disabled.is-plain,
+.lf-button.is-disabled.is-plain:focus,
+.lf-button.is-disabled.is-plain:hover {
   background-color: #fff;
   border-color: #ebeef5;
   color: #c0c4cc;
 }
 
-.lf-botton.is-loading {
+.lf-button.is-loading {
   position: relative;
   pointer-events: none;
 }
 
-.lf-botton.is-loading:before {
+.lf-button.is-loading:before {
   pointer-events: none;
   content: '';
   position: absolute;
@@ -113,512 +113,512 @@
   background-color: rgba(255, 255, 255, 0.35);
 }
 
-.lf-botton.is-round {
+.lf-button.is-round {
   border-radius: 20px;
   padding: 12px 23px;
 }
 
-.lf-botton.is-circle {
+.lf-button.is-circle {
   border-radius: 50%;
   padding: 12px;
 }
 
-.lf-botton--primary {
+.lf-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
 }
 
-.lf-botton--primary:focus,
-.lf-botton--primary:hover {
+.lf-button--primary:focus,
+.lf-button--primary:hover {
   background: #66b1ff;
   border-color: #66b1ff;
   color: #fff;
 }
 
-.lf-botton--primary.is-active,
-.lf-botton--primary:active {
+.lf-button--primary.is-active,
+.lf-button--primary:active {
   background: #3a8ee6;
   border-color: #3a8ee6;
   color: #fff;
 }
 
-.lf-botton--primary:active {
+.lf-button--primary:active {
   outline: 0;
 }
 
-.lf-botton--primary.is-disabled,
-.lf-botton--primary.is-disabled:active,
-.lf-botton--primary.is-disabled:focus,
-.lf-botton--primary.is-disabled:hover {
+.lf-button--primary.is-disabled,
+.lf-button--primary.is-disabled:active,
+.lf-button--primary.is-disabled:focus,
+.lf-button--primary.is-disabled:hover {
   color: #fff;
   background-color: #a0cfff;
   border-color: #a0cfff;
 }
 
-.lf-botton--primary.is-plain {
+.lf-button--primary.is-plain {
   color: #409eff;
   background: #ecf5ff;
   border-color: #b3d8ff;
 }
 
-.lf-botton--primary.is-plain:focus,
-.lf-botton--primary.is-plain:hover {
+.lf-button--primary.is-plain:focus,
+.lf-button--primary.is-plain:hover {
   background: #409eff;
   border-color: #409eff;
   color: #fff;
 }
 
-.lf-botton--primary.is-plain:active {
+.lf-button--primary.is-plain:active {
   background: #3a8ee6;
   border-color: #3a8ee6;
   color: #fff;
   outline: 0;
 }
 
-.lf-botton--primary.is-plain.is-disabled,
-.lf-botton--primary.is-plain.is-disabled:active,
-.lf-botton--primary.is-plain.is-disabled:focus,
-.lf-botton--primary.is-plain.is-disabled:hover {
+.lf-button--primary.is-plain.is-disabled,
+.lf-button--primary.is-plain.is-disabled:active,
+.lf-button--primary.is-plain.is-disabled:focus,
+.lf-button--primary.is-plain.is-disabled:hover {
   color: #8cc5ff;
   background-color: #ecf5ff;
   border-color: #d9ecff;
 }
 
-.lf-botton--success {
+.lf-button--success {
   color: #fff;
   background-color: #67c23a;
   border-color: #67c23a;
 }
 
-.lf-botton--success:focus,
-.lf-botton--success:hover {
+.lf-button--success:focus,
+.lf-button--success:hover {
   background: #85ce61;
   border-color: #85ce61;
   color: #fff;
 }
 
-.lf-botton--success.is-active,
-.lf-botton--success:active {
+.lf-button--success.is-active,
+.lf-button--success:active {
   background: #5daf34;
   border-color: #5daf34;
   color: #fff;
 }
 
-.lf-botton--success:active {
+.lf-button--success:active {
   outline: 0;
 }
 
-.lf-botton--success.is-disabled,
-.lf-botton--success.is-disabled:active,
-.lf-botton--success.is-disabled:focus,
-.lf-botton--success.is-disabled:hover {
+.lf-button--success.is-disabled,
+.lf-button--success.is-disabled:active,
+.lf-button--success.is-disabled:focus,
+.lf-button--success.is-disabled:hover {
   color: #fff;
   background-color: #b3e19d;
   border-color: #b3e19d;
 }
 
-.lf-botton--success.is-plain {
+.lf-button--success.is-plain {
   color: #67c23a;
   background: #f0f9eb;
   border-color: #c2e7b0;
 }
 
-.lf-botton--success.is-plain:focus,
-.lf-botton--success.is-plain:hover {
+.lf-button--success.is-plain:focus,
+.lf-button--success.is-plain:hover {
   background: #67c23a;
   border-color: #67c23a;
   color: #fff;
 }
 
-.lf-botton--success.is-plain:active {
+.lf-button--success.is-plain:active {
   background: #5daf34;
   border-color: #5daf34;
   color: #fff;
   outline: 0;
 }
 
-.lf-botton--success.is-plain.is-disabled,
-.lf-botton--success.is-plain.is-disabled:active,
-.lf-botton--success.is-plain.is-disabled:focus,
-.lf-botton--success.is-plain.is-disabled:hover {
+.lf-button--success.is-plain.is-disabled,
+.lf-button--success.is-plain.is-disabled:active,
+.lf-button--success.is-plain.is-disabled:focus,
+.lf-button--success.is-plain.is-disabled:hover {
   color: #a4da89;
   background-color: #f0f9eb;
   border-color: #e1f3d8;
 }
 
-.lf-botton--warning {
+.lf-button--warning {
   color: #fff;
   background-color: #e6a23c;
   border-color: #e6a23c;
 }
 
-.lf-botton--warning:focus,
-.lf-botton--warning:hover {
+.lf-button--warning:focus,
+.lf-button--warning:hover {
   background: #ebb563;
   border-color: #ebb563;
   color: #fff;
 }
 
-.lf-botton--warning.is-active,
-.lf-botton--warning:active {
+.lf-button--warning.is-active,
+.lf-button--warning:active {
   background: #cf9236;
   border-color: #cf9236;
   color: #fff;
 }
 
-.lf-botton--warning:active {
+.lf-button--warning:active {
   outline: 0;
 }
 
-.lf-botton--warning.is-disabled,
-.lf-botton--warning.is-disabled:active,
-.lf-botton--warning.is-disabled:focus,
-.lf-botton--warning.is-disabled:hover {
+.lf-button--warning.is-disabled,
+.lf-button--warning.is-disabled:active,
+.lf-button--warning.is-disabled:focus,
+.lf-button--warning.is-disabled:hover {
   color: #fff;
   background-color: #f3d19e;
   border-color: #f3d19e;
 }
 
-.lf-botton--warning.is-plain {
+.lf-button--warning.is-plain {
   color: #e6a23c;
   background: #fdf6ec;
   border-color: #f5dab1;
 }
 
-.lf-botton--warning.is-plain:focus,
-.lf-botton--warning.is-plain:hover {
+.lf-button--warning.is-plain:focus,
+.lf-button--warning.is-plain:hover {
   background: #e6a23c;
   border-color: #e6a23c;
   color: #fff;
 }
 
-.lf-botton--warning.is-plain:active {
+.lf-button--warning.is-plain:active {
   background: #cf9236;
   border-color: #cf9236;
   color: #fff;
   outline: 0;
 }
 
-.lf-botton--warning.is-plain.is-disabled,
-.lf-botton--warning.is-plain.is-disabled:active,
-.lf-botton--warning.is-plain.is-disabled:focus,
-.lf-botton--warning.is-plain.is-disabled:hover {
+.lf-button--warning.is-plain.is-disabled,
+.lf-button--warning.is-plain.is-disabled:active,
+.lf-button--warning.is-plain.is-disabled:focus,
+.lf-button--warning.is-plain.is-disabled:hover {
   color: #f0c78a;
   background-color: #fdf6ec;
   border-color: #faecd8;
 }
 
-.lf-botton--danger {
+.lf-button--danger {
   color: #fff;
   background-color: #f56c6c;
   border-color: #f56c6c;
 }
 
-.lf-botton--danger:focus,
-.lf-botton--danger:hover {
+.lf-button--danger:focus,
+.lf-button--danger:hover {
   background: #f78989;
   border-color: #f78989;
   color: #fff;
 }
 
-.lf-botton--danger.is-active,
-.lf-botton--danger:active {
+.lf-button--danger.is-active,
+.lf-button--danger:active {
   background: #dd6161;
   border-color: #dd6161;
   color: #fff;
 }
 
-.lf-botton--danger:active {
+.lf-button--danger:active {
   outline: 0;
 }
 
-.lf-botton--danger.is-disabled,
-.lf-botton--danger.is-disabled:active,
-.lf-botton--danger.is-disabled:focus,
-.lf-botton--danger.is-disabled:hover {
+.lf-button--danger.is-disabled,
+.lf-button--danger.is-disabled:active,
+.lf-button--danger.is-disabled:focus,
+.lf-button--danger.is-disabled:hover {
   color: #fff;
   background-color: #fab6b6;
   border-color: #fab6b6;
 }
 
-.lf-botton--danger.is-plain {
+.lf-button--danger.is-plain {
   color: #f56c6c;
   background: #fef0f0;
   border-color: #fbc4c4;
 }
 
-.lf-botton--danger.is-plain:focus,
-.lf-botton--danger.is-plain:hover {
+.lf-button--danger.is-plain:focus,
+.lf-button--danger.is-plain:hover {
   background: #f56c6c;
   border-color: #f56c6c;
   color: #fff;
 }
 
-.lf-botton--danger.is-plain:active {
+.lf-button--danger.is-plain:active {
   background: #dd6161;
   border-color: #dd6161;
   color: #fff;
   outline: 0;
 }
 
-.lf-botton--danger.is-plain.is-disabled,
-.lf-botton--danger.is-plain.is-disabled:active,
-.lf-botton--danger.is-plain.is-disabled:focus,
-.lf-botton--danger.is-plain.is-disabled:hover {
+.lf-button--danger.is-plain.is-disabled,
+.lf-button--danger.is-plain.is-disabled:active,
+.lf-button--danger.is-plain.is-disabled:focus,
+.lf-button--danger.is-plain.is-disabled:hover {
   color: #f9a7a7;
   background-color: #fef0f0;
   border-color: #fde2e2;
 }
 
-.lf-botton--info {
+.lf-button--info {
   color: #fff;
   background-color: #909399;
   border-color: #909399;
 }
 
-.lf-botton--info:focus,
-.lf-botton--info:hover {
+.lf-button--info:focus,
+.lf-button--info:hover {
   background: #a6a9ad;
   border-color: #a6a9ad;
   color: #fff;
 }
 
-.lf-botton--info.is-active,
-.lf-botton--info:active {
+.lf-button--info.is-active,
+.lf-button--info:active {
   background: #82848a;
   border-color: #82848a;
   color: #fff;
 }
 
-.lf-botton--info:active {
+.lf-button--info:active {
   outline: 0;
 }
 
-.lf-botton--info.is-disabled,
-.lf-botton--info.is-disabled:active,
-.lf-botton--info.is-disabled:focus,
-.lf-botton--info.is-disabled:hover {
+.lf-button--info.is-disabled,
+.lf-button--info.is-disabled:active,
+.lf-button--info.is-disabled:focus,
+.lf-button--info.is-disabled:hover {
   color: #fff;
   background-color: #c8c9cc;
   border-color: #c8c9cc;
 }
 
-.lf-botton--info.is-plain {
+.lf-button--info.is-plain {
   color: #909399;
   background: #f4f4f5;
   border-color: #d3d4d6;
 }
 
-.lf-botton--info.is-plain:focus,
-.lf-botton--info.is-plain:hover {
+.lf-button--info.is-plain:focus,
+.lf-button--info.is-plain:hover {
   background: #909399;
   border-color: #909399;
   color: #fff;
 }
 
-.lf-botton--info.is-plain:active {
+.lf-button--info.is-plain:active {
   background: #82848a;
   border-color: #82848a;
   color: #fff;
   outline: 0;
 }
 
-.lf-botton--info.is-plain.is-disabled,
-.lf-botton--info.is-plain.is-disabled:active,
-.lf-botton--info.is-plain.is-disabled:focus,
-.lf-botton--info.is-plain.is-disabled:hover {
+.lf-button--info.is-plain.is-disabled,
+.lf-button--info.is-plain.is-disabled:active,
+.lf-button--info.is-plain.is-disabled:focus,
+.lf-button--info.is-plain.is-disabled:hover {
   color: #bcbec2;
   background-color: #f4f4f5;
   border-color: #e9e9eb;
 }
 
-.lf-botton--text,
-.lf-botton--text.is-disabled,
-.lf-botton--text.is-disabled:focus,
-.lf-botton--text.is-disabled:hover,
-.lf-botton--text:active {
+.lf-button--text,
+.lf-button--text.is-disabled,
+.lf-button--text.is-disabled:focus,
+.lf-button--text.is-disabled:hover,
+.lf-button--text:active {
   border-color: transparent;
 }
 
-.lf-botton--medium {
+.lf-button--medium {
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.lf-botton--mini,
-.lf-botton--small {
+.lf-button--mini,
+.lf-button--small {
   font-size: 12px;
   border-radius: 3px;
 }
 
-.lf-botton--medium.is-round {
+.lf-button--medium.is-round {
   padding: 10px 20px;
 }
 
-.lf-botton--medium.is-circle {
+.lf-button--medium.is-circle {
   padding: 10px;
 }
 
-.lf-botton--small,
-.lf-botton--small.is-round {
+.lf-button--small,
+.lf-button--small.is-round {
   padding: 9px 15px;
 }
 
-.lf-botton--small.is-circle {
+.lf-button--small.is-circle {
   padding: 9px;
 }
 
-.lf-botton--mini,
-.lf-botton--mini.is-round {
+.lf-button--mini,
+.lf-button--mini.is-round {
   padding: 7px 15px;
 }
 
-.lf-botton--mini.is-circle {
+.lf-button--mini.is-circle {
   padding: 7px;
 }
 
-.lf-botton--text {
+.lf-button--text {
   color: #409eff;
   background: 0 0;
   padding-left: 0;
   padding-right: 0;
 }
 
-.lf-botton--text:focus,
-.lf-botton--text:hover {
+.lf-button--text:focus,
+.lf-button--text:hover {
   color: #66b1ff;
   border-color: transparent;
   background-color: transparent;
 }
 
-.lf-botton--text:active {
+.lf-button--text:active {
   color: #3a8ee6;
   background-color: transparent;
 }
 
-.lf-botton-group {
+.lf-button-group {
   display: inline-block;
   vertical-align: middle;
 }
 
-.lf-botton-group::after,
-.lf-botton-group::before {
+.lf-button-group::after,
+.lf-button-group::before {
   display: table;
   content: '';
 }
 
-.lf-botton-group::after {
+.lf-button-group::after {
   clear: both;
 }
 
-.lf-botton-group > .lf-botton {
+.lf-button-group > .lf-button {
   float: left;
   position: relative;
 }
 
-.lf-botton-group > .lf-botton + .lf-botton {
+.lf-button-group > .lf-button + .lf-button {
   margin-left: 0;
 }
 
-.lf-botton-group > .lf-botton:first-child {
+.lf-button-group > .lf-button:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.lf-botton-group > .lf-botton:last-child {
+.lf-button-group > .lf-button:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.lf-botton-group > .lf-botton:first-child:last-child {
+.lf-button-group > .lf-button:first-child:last-child {
   border-radius: 4px;
 }
 
-.lf-botton-group > .lf-botton:first-child:last-child.is-round {
+.lf-button-group > .lf-button:first-child:last-child.is-round {
   border-radius: 20px;
 }
 
-.lf-botton-group > .lf-botton:first-child:last-child.is-circle {
+.lf-button-group > .lf-button:first-child:last-child.is-circle {
   border-radius: 50%;
 }
 
-.lf-botton-group > .lf-botton:not(:first-child):not(:last-child) {
+.lf-button-group > .lf-button:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.lf-botton-group > .lf-botton:not(:last-child) {
+.lf-button-group > .lf-button:not(:last-child) {
   margin-right: -1px;
 }
 
-.lf-botton-group > .el-dropdown > .lf-botton {
+.lf-button-group > .el-dropdown > .lf-button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--primary:first-child {
+.lf-button-group .lf-button--primary:first-child {
   border-right-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--primary:last-child {
+.lf-button-group .lf-button--primary:last-child {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--primary:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-right-color: rgba(255, 255, 255, 0.5);
-}
-
-.lf-botton-group .lf-botton--success:first-child {
-  border-right-color: rgba(255, 255, 255, 0.5);
-}
-
-.lf-botton-group .lf-botton--success:last-child {
-  border-left-color: rgba(255, 255, 255, 0.5);
-}
-
-.lf-botton-group .lf-botton--success:not(:first-child):not(:last-child) {
+.lf-button-group .lf-button--primary:not(:first-child):not(:last-child) {
   border-left-color: rgba(255, 255, 255, 0.5);
   border-right-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--warning:first-child {
+.lf-button-group .lf-button--success:first-child {
   border-right-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--warning:last-child {
+.lf-button-group .lf-button--success:last-child {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--warning:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, 0.5);
-  border-right-color: rgba(255, 255, 255, 0.5);
-}
-
-.lf-botton-group .lf-botton--danger:first-child {
-  border-right-color: rgba(255, 255, 255, 0.5);
-}
-
-.lf-botton-group .lf-botton--danger:last-child {
-  border-left-color: rgba(255, 255, 255, 0.5);
-}
-
-.lf-botton-group .lf-botton--danger:not(:first-child):not(:last-child) {
+.lf-button-group .lf-button--success:not(:first-child):not(:last-child) {
   border-left-color: rgba(255, 255, 255, 0.5);
   border-right-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--info:first-child {
+.lf-button-group .lf-button--warning:first-child {
   border-right-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--info:last-child {
+.lf-button-group .lf-button--warning:last-child {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 
-.lf-botton-group .lf-botton--info:not(:first-child):not(:last-child) {
+.lf-button-group .lf-button--warning:not(:first-child):not(:last-child) {
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(255, 255, 255, 0.5);
+}
+
+.lf-button-group .lf-button--danger:first-child {
+  border-right-color: rgba(255, 255, 255, 0.5);
+}
+
+.lf-button-group .lf-button--danger:last-child {
+  border-left-color: rgba(255, 255, 255, 0.5);
+}
+
+.lf-button-group .lf-button--danger:not(:first-child):not(:last-child) {
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(255, 255, 255, 0.5);
+}
+
+.lf-button-group .lf-button--info:first-child {
+  border-right-color: rgba(255, 255, 255, 0.5);
+}
+
+.lf-button-group .lf-button--info:last-child {
+  border-left-color: rgba(255, 255, 255, 0.5);
+}
+
+.lf-button-group .lf-button--info:not(:first-child):not(:last-child) {
   border-left-color: rgba(255, 255, 255, 0.5);
   border-right-color: rgba(255, 255, 255, 0.5);
 }
