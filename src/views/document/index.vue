@@ -1,32 +1,16 @@
 <template>
   <div>
-    <div class="header">
-      <div class="headerLeft">
-        <a href="#">
-          <img src="../../assets/logo.png" alt="" />
-        </a>
-      </div>
-      <div class="headerRight">
-        <ul>
-          <li><a href="">测试1</a></li>
-          <li><a href="">测试2</a></li>
-          <li><a href="">测试3</a></li>
-          <li><a href="">测试4</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="container">
       <div class="leftMenu">
         <ul>
           <li><router-link to="/document/buttonExp">按钮</router-link></li>
-          <li><router-link to="/document/buttonExp1">按钮1</router-link></li>
+          <li><router-link to="/document/radioExp">单选框</router-link></li>
         </ul>
       </div>
       <div class="rightContent">
         <router-view />
       </div>
     </div>
-    <div class="footer"></div>
   </div>
 </template>
 <script>
@@ -50,23 +34,8 @@ export default {
 }
 </script>
 <style lang="scss">
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  height: 50px;
-  .headerLeft {
-    a > img {
-      width: 50px;
-    }
-  }
-  .headerRight {
-    ul > li {
-      float: left;
-    }
-  }
-}
 .container {
+  margin: 10px;
   display: flex;
   height: 500px;
   .leftMenu {

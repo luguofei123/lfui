@@ -13,11 +13,11 @@ export const documentRoutes = [
         component: () => import('@/views/document/manual/buttonExp.vue')
       },
       {
-        path: 'buttonExp1',
+        path: 'radioExp',
         moduleCode: 'pub',
-        name: 'buttonExp1',
-        meta: { moduleName: '公共组件', subModuleName: '公共组件', menuName: '按钮例子' },
-        component: () => import('@/views/document/manual/buttonExp1.vue')
+        name: 'radioExp',
+        meta: { moduleName: '公共组件', subModuleName: '公共组件', menuName: '单选例子' },
+        component: () => import('@/views/document/manual/radioExp.vue')
       }
     ]
   }
