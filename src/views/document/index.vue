@@ -14,14 +14,11 @@
   </div>
 </template>
 <script>
-// import Vue from 'vue'
 // 文档源码高亮部分hao
-// import hljs from "highlight.js";
-// import 'highlight.js/styles/vs2015.css'
-// import hljscore from "highlight.js/lib/core";
-// window.hljs = hljs
-// Vue.use(hljscore.vuePlugin);
-
+import Vue from 'vue'
+import VueHighlightJS from 'vue-highlightjs'
+import 'highlight.js/styles/atom-one-dark.css'
+Vue.use(VueHighlightJS)
 export default {
   data() {
     return {
