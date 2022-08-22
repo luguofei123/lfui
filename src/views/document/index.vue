@@ -37,9 +37,15 @@ export default {
   height: 500px;
   .leftMenu {
     width: 200px;
+    font-size: 14px;
   }
   .rightContent {
     flex: 1;
+    .demoBox {
+      .demo {
+        margin-bottom: 16px;
+      }
+    }
   }
 }
 </style>

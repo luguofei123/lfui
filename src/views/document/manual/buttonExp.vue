@@ -69,9 +69,9 @@ export default {
 }
 </script>
 <style lang='scss'>
-.demoBox {
-  .demo {
-    margin-bottom: 16px;
-  }
-}
+// .demoBox {
+//   .demo {
+//     margin-bottom: 16px;
+//   }
+// }
 </style>

@@ -1,30 +1,47 @@
 <template>
-  <div>
-    <lf-button>默认按钮</lf-button>
-    &nbsp;&nbsp;
-    <lf-button type="primary" size="small">primary</lf-button>
-    &nbsp;&nbsp;
-    <lf-button type="primary">primary</lf-button>
-    &nbsp;&nbsp;
-    <lf-button @click="test1" disabled>默认按钮11</lf-button>
-    &nbsp;&nbsp;
-    <lf-button type="primary" size="large" @click="test" disabled>primary</lf-button>
+  <div class="demoBox">
+    <div class="demo">
+      <lf-radio v-model="radio" label="1" @change="radioChange">单选</lf-radio>
+      <lf-radio v-model="radio" label="2" @change="radioChange">单选</lf-radio>
+      <lf-radio-group>
+        <lf-radio v-model="radio1" label="1">单选</lf-radio>
+        <lf-radio v-model="radio1" label="2">单选</lf-radio>
+        <lf-radio v-model="radio1" label="3">单选</lf-radio>
+      </lf-radio-group>
+    </div>
+    <div class="demo">
+      <pre v-highlightjs><code class="javascript">{{code2}}</code></pre>
+    </div>
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {}
+    return {
+      radio: '1',
+      radio1: '1',
+      code2: `    
+      <lf-radio v-model="radio" label="1" @change="radioChange">单选</lf-radio>
+      <lf-radio v-model="radio" label="2" @change="radioChange">单选</lf-radio>
+    <lf-radio-group>
+      <lf-radio v-model="radio1" label="1">单选</lf-radio>
+      <lf-radio v-model="radio1" label="2">单选</lf-radio>
+      <lf-radio v-model="radio1" label="3">单选</lf-radio>
+    </lf-radio-group>`
+    }
   },
   methods: {
-    test(e) {
-      console.log('test')
-      console.log(e)
-    },
-    test1(e) {
+    radioChange(e) {
       console.log('test1')
       console.log(e)
     }
   }
 }
 </script>
+<style lang='scss'>
+// .demoBox {
+//   .demo {
+//     margin-bottom: 16px;
+//   }
+// }
+</style>
