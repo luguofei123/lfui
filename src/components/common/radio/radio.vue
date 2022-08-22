@@ -1,7 +1,7 @@
 <template>
-  <label class="lf-radio" :class="{ 'is-checked1111': label == value }">
+  <label :class="['lf-radio', 'lf-radio--' + size, 'lf-radio--' + type, disabled ? 'is-disabled' : '', type === 'button' ? 'lf-radio-button' : '']">
     <span class="lf-radio_input">
-      <input type="radio" class="lf-radio_label" :value="label" :name="name" v-model="model" />
+      <input type="radio" class="lf-radio_label" :value="label" :name="name" v-model="currentValue" />
     </span>
     <span class="lf-radio_label">
       <slot></slot>
@@ -16,7 +16,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'radio'
+      default: 'radio' // button
     },
     disabled: {
       type: Boolean,
@@ -24,7 +24,7 @@ export default {
     },
     size: {
       type: String,
-      default: 'default'
+      default: 'small'
       // default small large
     },
     label: {
@@ -45,7 +45,7 @@ export default {
   },
   computed: {
     // 如果用双向绑定一个计算属性，必须提供一个get和set;需要写成一个对象
-    model: {
+    currentValue: {
       get() {
         // model的值是父组件传过来的value
         return this.value

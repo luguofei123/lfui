@@ -8,4 +8,4 @@ export default {
   name: 'lf-radio-group'
 }
 </script>
-<style lang="scss" src="./radio.scss"></style>
+<style lang="scss" src="./radioGroup.scss"></style>

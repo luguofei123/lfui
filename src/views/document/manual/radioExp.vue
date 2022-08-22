@@ -3,6 +3,11 @@
     <div class="demo">
       <lf-radio v-model="radio" label="1" @change="radioChange">单选</lf-radio>
       <lf-radio v-model="radio" label="2" @change="radioChange">单选</lf-radio>
+    </div>
+    <div class="demo">
+      <pre v-highlightjs><code class="javascript">{{code1}}</code></pre>
+    </div>
+    <div class="demo">
       <lf-radio-group>
         <lf-radio v-model="radio1" label="1">单选</lf-radio>
         <lf-radio v-model="radio1" label="2">单选</lf-radio>
@@ -20,9 +25,11 @@ export default {
     return {
       radio: '1',
       radio1: '1',
-      code2: `    
+      code1: `
       <lf-radio v-model="radio" label="1" @change="radioChange">单选</lf-radio>
       <lf-radio v-model="radio" label="2" @change="radioChange">单选</lf-radio>
+      `,
+      code2: `
     <lf-radio-group>
       <lf-radio v-model="radio1" label="1">单选</lf-radio>
       <lf-radio v-model="radio1" label="2">单选</lf-radio>

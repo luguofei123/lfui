@@ -1,8 +1,8 @@
-.lf-button-group > .lf-button.is-active,
-.lf-button-group > .lf-button.is-disabled,
-.lf-button-group > .lf-button:active,
-.lf-button-group > .lf-button:focus,
-.lf-button-group > .lf-button:hover {
+.lf-button-group>.lf-button.is-active,
+.lf-button-group>.lf-button.is-disabled,
+.lf-button-group>.lf-button:active,
+.lf-button-group>.lf-button:focus,
+.lf-button-group>.lf-button:hover {
   z-index: 1;
 }
 
@@ -31,7 +31,7 @@
   border-radius: 4px;
 }
 
-.lf-button + .lf-button {
+.lf-button+.lf-button {
   margin-left: 10px;
 }
 
@@ -52,7 +52,7 @@
   border: 0;
 }
 
-.lf-button [class*='el-icon-'] + span {
+.lf-button [class*='el-icon-']+span {
   margin-left: 5px;
 }
 
@@ -441,7 +441,7 @@
   border-color: transparent;
 }
 
-.lf-button--medium {
+.lf-button--large {
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 4px;
@@ -453,11 +453,11 @@
   border-radius: 3px;
 }
 
-.lf-button--medium.is-round {
+.lf-button--large.is-round {
   padding: 10px 20px;
 }
 
-.lf-button--medium.is-circle {
+.lf-button--large.is-circle {
   padding: 10px;
 }
 
@@ -513,46 +513,46 @@
   clear: both;
 }
 
-.lf-button-group > .lf-button {
+.lf-button-group>.lf-button {
   float: left;
   position: relative;
 }
 
-.lf-button-group > .lf-button + .lf-button {
+.lf-button-group>.lf-button+.lf-button {
   margin-left: 0;
 }
 
-.lf-button-group > .lf-button:first-child {
+.lf-button-group>.lf-button:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.lf-button-group > .lf-button:last-child {
+.lf-button-group>.lf-button:last-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.lf-button-group > .lf-button:first-child:last-child {
+.lf-button-group>.lf-button:first-child:last-child {
   border-radius: 4px;
 }
 
-.lf-button-group > .lf-button:first-child:last-child.is-round {
+.lf-button-group>.lf-button:first-child:last-child.is-round {
   border-radius: 20px;
 }
 
-.lf-button-group > .lf-button:first-child:last-child.is-circle {
+.lf-button-group>.lf-button:first-child:last-child.is-circle {
   border-radius: 50%;
 }
 
-.lf-button-group > .lf-button:not(:first-child):not(:last-child) {
+.lf-button-group>.lf-button:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.lf-button-group > .lf-button:not(:last-child) {
+.lf-button-group>.lf-button:not(:last-child) {
   margin-right: -1px;
 }
 
-.lf-button-group > .el-dropdown > .lf-button {
+.lf-button-group>.el-dropdown>.lf-button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left-color: rgba(255, 255, 255, 0.5);
