@@ -18,6 +18,13 @@ export const documentRoutes = [
         name: 'radioExp',
         meta: { moduleName: '公共组件', subModuleName: '公共组件', menuName: '单选例子' },
         component: () => import('@/views/document/manual/radioExp.vue')
+      },
+      {
+        path: 'checkboxExp',
+        moduleCode: 'pub',
+        name: 'checkboxExp',
+        meta: { moduleName: '公共组件', subModuleName: '公共组件', menuName: '复选例子' },
+        component: () => import('@/views/document/manual/checkboxExp.vue')
       }
     ]
   }

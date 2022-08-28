@@ -2,7 +2,7 @@
 <template>
   <label :class="['lf-checkbox', 'lf-checkbox--' + size, 'lf-checkbox--' + type, disabled ? 'is-disabled' : '']">
     <span class="lf-checkbox_input">
-      <input type="radio" class="lf-checkbox_label" :value="label" :name="name" v-model="currentValue" />
+      <input type="checkbox" class="lf-checkbox_label" :value="label" :name="name" v-model="currentValue" />
     </span>
     <span class="lf-checkbox_label">
       <slot></slot>
@@ -50,4 +50,4 @@ export default {
   }
 }
 </script>
-<style lang="scss" src="./button.scss"></style>
+<style lang="scss" src="./checkbox.scss"></style>

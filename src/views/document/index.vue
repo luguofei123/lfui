@@ -3,8 +3,9 @@
     <div class="container">
       <div class="leftMenu">
         <ul>
-          <li><router-link to="/document/buttonExp">按钮</router-link></li>
-          <li><router-link to="/document/radioExp">单选框</router-link></li>
+          <li><router-link to="/document/buttonExp">按钮组件</router-link></li>
+          <li><router-link to="/document/radioExp">单选组件</router-link></li>
+          <li><router-link to="/document/checkboxExp">复选组件</router-link></li>
         </ul>
       </div>
       <div class="rightContent">
@@ -38,6 +39,9 @@ export default {
   .leftMenu {
     width: 200px;
     font-size: 14px;
+    ul li {
+      margin-bottom: 10px;
+    }
   }
   .rightContent {
     flex: 1;

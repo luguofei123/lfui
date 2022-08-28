@@ -43,19 +43,32 @@ export default {
   data() {
     return {}
   },
+  inject: {
+    RadioGroup: {
+      default: ''
+    }
+  },
   computed: {
     // 如果用双向绑定一个计算属性，必须提供一个get和set;需要写成一个对象
     currentValue: {
       get() {
         // model的值是父组件传过来的value
-        return this.value
+        return this.isGroup ? this.RadioGroup.value : this.value
       },
       set(value) {
-        debugger
         // 触发父组件给当前组件注册的input事件
-        this.$emit('input', value)
-        this.$emit('change', value)
+        if (this.isGroup) {
+          this.RadioGroup.$emit('input', value)
+          this.RadioGroup.$emit('change', value)
+        } else {
+          this.$emit('input', value)
+          this.$emit('change', value)
+        }
       }
+    },
+    isGroup() {
+      // 用于判断radio是否被radioGroup所包裹(使用2个感叹号，将其改为布尔值)
+      return !!this.RadioGroup
     }
   },
   methods: {}

@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'lf-radio-group',
+  name: 'lf-checkbox-group',
   provide() {
     return {
       RadioGroup: this
@@ -16,4 +16,4 @@ export default {
   }
 }
 </script>
-<style lang="scss" src="./radioGroup.scss"></style>
+<style lang="scss" src="./checkbox.scss"></style>
