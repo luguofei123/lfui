@@ -1,53 +1,40 @@
 <!-- 选择框 -->
 <template>
-  <label :class="['lf-checkbox', 'lf-checkbox--' + size, 'lf-checkbox--' + type, disabled ? 'is-disabled' : '']">
-    <span class="lf-checkbox_input">
-      <input type="radio" class="lf-checkbox_label" :value="label" :name="name" v-model="currentValue" />
-    </span>
-    <span class="lf-checkbox_label">
-      <slot></slot>
-      <!-- 如果没有传值，就把label作为文本显示 -->
-      <template v-if="!$slots.default">{{ label }}</template>
-    </span>
-  </label>
+  <div>
+    <input ref="reference" type="text" name="cede" v-model="currentValue" @focus="handleFocus" />
+    <!-- 模仿vue做了一个下拉 -->
+    <transition>
+      <el-select-menu ref="popper" :append-to-body="popperAppendToBody" v-show="visible !== false">
+        <ul>
+          <li>1111</li>
+          <li>2222</li>
+          <li>3333</li>
+          <li>4444</li>
+          <li>5555</li>
+        </ul>
+      </el-select-menu>
+    </transition>
+  </div>
 </template>
 <script lang="javascript">
+import ElSelectMenu from './select-dropdown.vue'
 export default {
   name: 'lf-checkbox',
-  props: {
-    type: {
-      type: String,
-      default: 'default'
-      // default, primary, dashed, danger, link
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    size: {
-      type: String,
-      default: 'samll'
-      // default small large
-    },
-    loading: {
-      type: Boolean,
-      default: false
-    },
-    icon: {
-      type: String,
-      default: ''
-    }
-  },
   data() {
     return {
-      tete: ''
+      visible: false,
+      popperAppendToBody: true,
+      currentValue: ''
     }
   },
   methods: {
-    onClick(e) {
-      this.$emit('click', e)
+    handleFocus(e) {
+      this.visible = true
     }
+  },
+  components: {
+    ElSelectMenu
   }
 }
 </script>
-<style lang="scss" src="./button.scss"></style>
+<style lang="scss" src="./select.scss"></style>

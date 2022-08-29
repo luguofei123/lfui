@@ -6,6 +6,7 @@
           <li><router-link to="/document/buttonExp">按钮组件</router-link></li>
           <li><router-link to="/document/radioExp">单选组件</router-link></li>
           <li><router-link to="/document/checkboxExp">复选组件</router-link></li>
+          <li><router-link to="/document/selectExp">下拉选择</router-link></li>
         </ul>
       </div>
       <div class="rightContent">

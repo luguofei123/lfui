@@ -5,6 +5,7 @@ import LfRadio from '@/components/common/radio/radio'
 import LfRadioGroup from '@/components/common/radio/radioGroup'
 import LfCheckbox from '@/components/common/checkbox/checkbox'
 import LfCheckboxGroup from '@/components/common/checkbox/checkboxGroup'
+import LfSelect from '@/components/common/select/select'
 const global = {
   install: function (Vue) {
     Vue.component('lf-button', LfButton)
@@ -13,6 +14,7 @@ const global = {
     Vue.component('lf-radio-group', LfRadioGroup)
     Vue.component('lf-checkbox', LfCheckbox)
     Vue.component('lf-checkbox-group', LfCheckboxGroup)
+    Vue.component('lf-select', LfSelect)
   }
 }
 

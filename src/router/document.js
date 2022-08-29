@@ -25,6 +25,13 @@ export const documentRoutes = [
         name: 'checkboxExp',
         meta: { moduleName: '公共组件', subModuleName: '公共组件', menuName: '复选例子' },
         component: () => import('@/views/document/manual/checkboxExp.vue')
+      },
+      {
+        path: 'selectExp',
+        moduleCode: 'pub',
+        name: 'selectExp',
+        meta: { moduleName: '公共组件', subModuleName: '公共组件', menuName: '下拉选择例子' },
+        component: () => import('@/views/document/manual/selectExp.vue')
       }
     ]
   }

@@ -8,7 +8,7 @@ export default {
   name: 'lf-checkbox-group',
   provide() {
     return {
-      RadioGroup: this
+      checkboxGroup: this
     }
   },
   props: {

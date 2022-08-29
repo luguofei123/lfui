@@ -17,8 +17,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'default'
-      // default, primary, dashed, danger, link
+      default: 'default' // button
     },
     disabled: {
       type: Boolean,
@@ -26,16 +25,24 @@ export default {
     },
     size: {
       type: String,
-      default: 'samll'
+      default: 'small'
       // default small large
     },
-    loading: {
-      type: Boolean,
-      default: false
+    label: {
+      type: String,
+      default: '0'
     },
-    icon: {
+    value: {
       type: String,
       default: ''
+    },
+    name: {
+      type: String,
+      default: ''
+    },
+    indeterminate: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -43,11 +50,35 @@ export default {
       tete: ''
     }
   },
-  methods: {
-    onClick(e) {
-      this.$emit('click', e)
+  inject: {
+    checkboxGroup: {
+      default: ''
     }
-  }
+  },
+  computed: {
+    // 如果用双向绑定一个计算属性，必须提供一个get和set;需要写成一个对象
+    currentValue: {
+      get() {
+        // model的值是父组件传过来的value
+        return this.isGroup ? this.checkboxGroup.value : this.value
+      },
+      set(value) {
+        // 触发父组件给当前组件注册的input事件
+        if (this.isGroup) {
+          this.checkboxGroup.$emit('input', value)
+          this.checkboxGroup.$emit('change', value)
+        } else {
+          this.$emit('input', value)
+          this.$emit('change', value)
+        }
+      }
+    },
+    isGroup() {
+      // 用于判断radio是否被radioGroup所包裹(使用2个感叹号，将其改为布尔值)
+      return !!this.checkboxGroup
+    }
+  },
+  methods: {}
 }
 </script>
 <style lang="scss" src="./checkbox.scss"></style>
