@@ -78,6 +78,7 @@ export default {
 
   methods: {
     createPopper () {
+      debugger
       if (this.$isServer) return;
       this.currentPlacement = this.currentPlacement || this.placement;
       if (!/^(top|bottom|left|right)(-start|-end)?$/g.test(this.currentPlacement)) {

@@ -61,8 +61,10 @@ export default {
 
   mounted() {
     this.referenceElm = this.$parent.$refs.reference.$el
+    debugger
     this.$parent.popperElm = this.popperElm = this.$el
     this.$on('updatePopper', () => {
+      debugger
       if (this.$parent.visible) this.updatePopper()
     })
     this.$on('destroyPopper', this.destroyPopper)

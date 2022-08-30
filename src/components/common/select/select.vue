@@ -1,7 +1,7 @@
 <!-- 选择框 -->
 <template>
   <div>
-    <input ref="reference" type="text" name="cede" v-model="currentValue" @focus="handleFocus" />
+    <lf-input ref="reference" type="text" name="cede" v-model="currentValue" @handleFocus="handleFocus"></lf-input>
     <!-- 模仿vue做了一个下拉 -->
     <transition>
       <el-select-menu ref="popper" :append-to-body="popperAppendToBody" v-show="visible !== false">
@@ -17,15 +17,59 @@
   </div>
 </template>
 <script lang="javascript">
+import LfInput from '../input/index'
+import Emitter from '../utils/mixins/emitter'
 import ElSelectMenu from './select-dropdown.vue'
 export default {
+  mixins: [Emitter],
   name: 'lf-checkbox',
   data() {
     return {
       visible: false,
       popperAppendToBody: true,
-      currentValue: ''
+      currentValue: '',
+      popperClass: {}
     }
+  },
+  provide() {
+    return {
+      select: this
+    }
+  },
+  watch: {
+    visible(val) {
+      if (!val) {
+        this.broadcast('ElSelectDropdown', 'destroyPopper')
+      } else {
+        this.broadcast('ElSelectDropdown', 'updatePopper')
+      }
+    }
+  },
+  mounted() {
+    if (this.multiple && Array.isArray(this.value) && this.value.length > 0) {
+      this.currentPlaceholder = ''
+    }
+    //  addResizeListener(this.$el, this.handleResize)
+
+    // const reference = this.$refs.reference
+    // if (reference && reference.$el) {
+    //   const sizeMap = {
+    //     medium: 36,
+    //     small: 32,
+    //     mini: 28
+    //   }
+    //   const input = reference.$el.querySelector('input')
+    //   this.initialInputHeight = input.getBoundingClientRect().height || sizeMap[this.selectSize]
+    // }
+    // if (this.remote && this.multiple) {
+    //   this.resetInputHeight()
+    // }
+    // this.$nextTick(() => {
+    //   if (reference && reference.$el) {
+    //     this.inputWidth = reference.$el.getBoundingClientRect().width
+    //   }
+    // })
+    // this.setSelected()
   },
   methods: {
     handleFocus(e) {
@@ -33,7 +77,8 @@ export default {
     }
   },
   components: {
-    ElSelectMenu
+    ElSelectMenu,
+    LfInput
   }
 }
 </script>
