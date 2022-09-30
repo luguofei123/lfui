@@ -1,9 +1,9 @@
 <!-- 选择框 -->
 <template>
-  <div>
+  <div class="select">
     <lf-input ref="reference" type="text" name="cede" v-model="currentValue" @handleFocus="handleFocus"></lf-input>
-    <!-- 模仿vue做了一个下拉 -->
-    <transition>
+    <!-- 模仿elementui做了一个下拉 -->
+    <transition name="lf-zoom-in-top">
       <el-select-menu ref="popper" :append-to-body="popperAppendToBody" v-show="visible !== false">
         <ul>
           <li>1111</li>
@@ -39,9 +39,9 @@ export default {
   watch: {
     visible(val) {
       if (!val) {
-        this.broadcast('ElSelectDropdown', 'destroyPopper')
+        this.broadcast('LfSelectDropdown', 'destroyPopper')
       } else {
-        this.broadcast('ElSelectDropdown', 'updatePopper')
+        this.broadcast('LfSelectDropdown', 'updatePopper')
       }
     }
   },

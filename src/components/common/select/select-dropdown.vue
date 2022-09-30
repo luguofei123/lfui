@@ -1,5 +1,5 @@
 <template>
-  <div class="el-select-dropdown el-popper" :class="[{ 'is-multiple': $parent.multiple }, popperClass]" :style="{ minWidth: minWidth }">
+  <div class="lf-select-dropdown lf-popper" :class="[{ 'is-multiple': $parent.multiple }, popperClass]" :style="{ minWidth: minWidth }">
     <slot></slot>
   </div>
 </template>
@@ -8,9 +8,9 @@
 import Popper from '../utils/vue-popper'
 
 export default {
-  name: 'ElSelectDropdown',
+  name: 'LfSelectDropdown',
 
-  componentName: 'ElSelectDropdown',
+  componentName: 'LfSelectDropdown',
 
   mixins: [Popper],
 
