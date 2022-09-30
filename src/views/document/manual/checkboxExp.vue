@@ -2,17 +2,16 @@
   <div class="demoBox">
     <div class="demo">
       <lf-checkbox v-model="checked1" @change="radioChange">单选</lf-checkbox>
-      <!-- <lf-radio v-model="radio" label="2" @change="radioChange">单选</lf-radio> -->
-      <!-- <lf-radio v-for="(item, index) in list" v-model="radio" :label="item.label" @change="radioChange" :key="index">{{ item.text }}</lf-radio> -->
     </div>
     <div class="demo">
       <pre v-highlightjs><code class="javascript">{{code1}}</code></pre>
     </div>
     <div class="demo">
-      <lf-checkbox-group v-model="radio1" @change="radioChange1">
-        <lf-checkbox>单选1</lf-checkbox>
-        <lf-checkbox>单选2</lf-checkbox>
-        <lf-checkbox>单选3</lf-checkbox>
+      {{ checked2 }}
+      <lf-checkbox-group v-model="checked2" @change="radioChange1">
+        <lf-checkbox label="复选框 A"></lf-checkbox>
+        <lf-checkbox label="复选框 B"></lf-checkbox>
+        <lf-checkbox label="复选框 C"></lf-checkbox>
       </lf-checkbox-group>
     </div>
     <div class="demo">
@@ -24,22 +23,21 @@
 export default {
   data() {
     return {
-      checked1: '',
+      checked1: true,
       list: [
         { label: '1', text: '单选1' },
         { label: '2', text: '单选1' }
       ],
-      radio: '1',
-      radio1: '1',
+      checked2: ['复选框 C'],
       code1: `
       <lf-radio v-for="(item, index) in list" v-model="radio" :label="item.label" @change="radioChange" :key="index">{{ item.text }}</lf-radio>
       `,
       code2: `
-      <lf-radio-group v-model="radio1" @change="radioChange1">
-        <lf-radio label="1">单选</lf-radio>
-        <lf-radio label="2">单选</lf-radio>
-        <lf-radio label="3">单选</lf-radio>
-      </lf-radio-group>`
+      <lf-checkbox-group v-model="checked2" @change="radioChange1">
+        <lf-checkbox label="复选框 A"></lf-checkbox>
+        <lf-checkbox label="复选框 B"></lf-checkbox>
+        <lf-checkbox label="复选框 C"></lf-checkbox>
+      </lf-checkbox-group>`
     }
   },
   methods: {

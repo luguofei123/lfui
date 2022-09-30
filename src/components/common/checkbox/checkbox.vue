@@ -63,6 +63,7 @@ export default {
         return this.isGroup ? this.checkboxGroup.value : this.value
       },
       set(value) {
+        debugger
         // 触发父组件给当前组件注册的input事件
         if (this.isGroup) {
           this.checkboxGroup.$emit('input', value)
