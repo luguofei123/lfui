@@ -1,7 +1,8 @@
 <template>
   <div class="demoBox">
     <div class="demo">
-      <lf-checkbox v-model="checked1" @change="radioChange">单选</lf-checkbox>
+      {{ checked1 }}
+      <lf-checkbox v-model="checked1" @change="radioChange" label="单选框 A"></lf-checkbox>
     </div>
     <div class="demo">
       <pre v-highlightjs><code class="javascript">{{code1}}</code></pre>
@@ -23,7 +24,7 @@
 export default {
   data() {
     return {
-      checked1: true,
+      checked1: [],
       list: [
         { label: '1', text: '单选1' },
         { label: '2', text: '单选1' }
